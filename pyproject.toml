@@ -5,4 +5,9 @@ quote-style = "single"
 
 [tool.mypy]
 warn_unused_configs = true
-disallow_incomplete_defs = false
+disallow_incomplete_defs = true
+mypy_path = "./src"
+
+[[tool.mypy.overrides]]
+module = ['numpy']
+ignore_missing_imports = true
