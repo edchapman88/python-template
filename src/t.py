@@ -1,7 +1,7 @@
 import numpy as np
 
 for i in range(4):
-    np.array(i, i + 1)
+    np.array([i, i + 1])
     print(i)
 
 lest = [
@@ -11,6 +11,10 @@ lest = [
     'test another',
     'test another',
 ]
+
+
+def unchecked():
+    np.array(1, 2)
 
 
 def my_func(var: str) -> str:
