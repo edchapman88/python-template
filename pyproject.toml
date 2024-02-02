@@ -8,6 +8,6 @@ warn_unused_configs = true
 disallow_incomplete_defs = true
 mypy_path = "./src"
 
-[[tool.mypy.overrides]]
-module = ['numpy']
-ignore_missing_imports = true
+# [[tool.mypy.overrides]]
+# module = ['numpy']
+# ignore_missing_imports = true
