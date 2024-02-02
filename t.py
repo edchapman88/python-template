@@ -10,6 +10,6 @@ lest = [
 ]
 
 
-def my_func(var):
+def my_func(var: str):
     """Add 1 to whatever"""
-    return var + 1
+    return var + str(1)

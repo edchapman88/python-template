@@ -2,3 +2,7 @@
 # Use single quotes rather than double quotes.
 # Double quotes are preserved for triple quotes (eg. doc-strings).
 quote-style = "single"
+
+[tool.mypy]
+warn_unused_configs = true
+disallow_incomplete_defs = false
