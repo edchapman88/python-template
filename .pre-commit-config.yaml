@@ -12,3 +12,4 @@ repos:
     hooks:
       - id: mypy
         args: [--disallow-incomplete-defs]
+        additional_dependencies: [numpy==1.26.3]
