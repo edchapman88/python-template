@@ -40,7 +40,13 @@ pre-commit install
 
 Local workspace checking:
 
-- `mypy` must be installed (eg. globally with pip)
+- `mypy` must be installed.
+  - The best option seems to be to install `mypy` locally (in the project
+    virtual environment), and then set
+    `"mypy.runUsingActiveInterpreter" : true,` in VSCode user setting (mentioned
+    above how to find these). The Mypy daemon can then have visibility on the
+    dependencies currently isntalled in the project environment (see info on the
+    daemon below).
 - The VSCode extension (`Mypy` by Matan Gover, which is better than the
   Microsoft `Mypy Type Checker` extension) will run a server to do live type
   checking **of the entire workspace**, not just files that have changes.
